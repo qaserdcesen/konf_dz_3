@@ -1,0 +1,6 @@
+[database]
+name = "mydb"
+users = [
+  {name = "admin", age = 30},
+  {name = "user", age = 20}
+]
