@@ -1,6 +1,5 @@
-[database]
-name = "mydb"
-users = [
-  {name = "admin", age = 30},
-  {name = "user", age = 20}
-]
+
+        [nested]
+        key1 = 42
+        key2 = { subkey1 = 10, subkey2 = [1, 2, 3] }
+        
