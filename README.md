@@ -102,10 +102,8 @@ python transpile.py input.toml
 ```
 **Результат работы программы:**
 
-# ВСТАВИТЬ ФОТО 
-````
+![image](https://github.com/user-attachments/assets/b2b0d4ee-f95b-401b-9010-d122355b32db)
 
-````
 
 ### Пример 2: Конфигурация графического интерфейса
 **Входной файл ```input2.toml```:**
@@ -121,10 +119,9 @@ config = { host = "localhost", port = 8080 }
 python transpile.py input2.toml
 ```
 **Результат работы программы:**
-# ВСТАВИТЬ ФОТО
-````
 
-````
+![image](https://github.com/user-attachments/assets/4e972b63-97db-469a-a469-33da6ec37193)
+
 
 ### Пример 3: Использование всех операций и функции ```pow()```
 **Входной файл ```input3.toml```:**
@@ -133,6 +130,8 @@ python transpile.py input2.toml
 [const]
 base = 10
 increment = "= base + 5"
+sorted_list = "= sort([5, 3, 8, 1])"
+server = { host = "127.0.0.1", port = 8080 }
 ```
 **Команда для запуска:**
 
@@ -141,13 +140,19 @@ python transpile.py input3.toml
 
 ```
 **Результат работы программы):**
-# ВСТАВИТЬ ФОТО
 
+![image](https://github.com/user-attachments/assets/fa468b71-c666-4371-8687-103c02b2c49f)
 
 ## 5. Результаты прогона тестов
 **Все тестовые файлы успешно обработаны, что подтверждает корректность работы всех функций транслятора.**
 
-**Вывод тестирования (```build.bat```):**
+**Вывод тестирования (```test_transpile.py```):**
+
+````
+python -m unittest test_transpile.py
+````
+
+![image](https://github.com/user-attachments/assets/bcfc84d4-79cd-4733-be7d-bd8884fae7de)
 
 
 ### Проверка корректности результатов
