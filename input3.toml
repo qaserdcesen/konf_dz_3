@@ -1,0 +1,5 @@
+[const]
+base = 10
+increment = "= base + 5"
+sorted_list = "= sort([5, 3, 8, 1])"
+server = { host = "127.0.0.1", port = 8080 }

@@ -1,5 +1,0 @@
-
-        [nested]
-        key1 = 42
-        key2 = { subkey1 = 10, subkey2 = [1, 2, 3] }
-        
